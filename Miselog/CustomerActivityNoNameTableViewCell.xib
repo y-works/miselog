@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CustomerActivityNoNameCell" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="CustomerActivityNoNameTableViewCell" customModule="Miselog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4g-DU-WSN">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="61.5"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="VH3-2q-05g"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy/mm/dd HH:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSh-v9-eFR">
+                        <rect key="frame" x="15" y="5" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="UVg-hM-RUE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Memo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gm-Vs-6ml">
+                        <rect key="frame" x="15" y="31" width="109" height="30.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="m4g-DU-WSN" secondAttribute="bottom" constant="5" id="5je-sL-4nZ"/>
+                    <constraint firstItem="nSh-v9-eFR" firstAttribute="top" secondItem="m4g-DU-WSN" secondAttribute="top" constant="5" id="9tt-8q-4Ux"/>
+                    <constraint firstItem="2Gm-Vs-6ml" firstAttribute="bottom" secondItem="m4g-DU-WSN" secondAttribute="bottom" id="PWw-Gb-zG8"/>
+                    <constraint firstItem="2Gm-Vs-6ml" firstAttribute="leading" secondItem="nSh-v9-eFR" secondAttribute="leading" id="Q5y-9G-hgF"/>
+                    <constraint firstItem="nSh-v9-eFR" firstAttribute="leading" secondItem="m4g-DU-WSN" secondAttribute="trailing" constant="10" id="bXs-eJ-dRB"/>
+                    <constraint firstItem="2Gm-Vs-6ml" firstAttribute="top" secondItem="nSh-v9-eFR" secondAttribute="bottom" constant="5" id="l5v-oj-wcY"/>
+                    <constraint firstItem="m4g-DU-WSN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zOX-DR-id6"/>
+                    <constraint firstItem="m4g-DU-WSN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zlt-aN-yrL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelActivityMemo" destination="2Gm-Vs-6ml" id="wTd-BP-4Qe"/>
+                <outlet property="labelDate" destination="nSh-v9-eFR" id="8ue-zk-IxY"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="87.5"/>
+        </tableViewCell>
+    </objects>
+</document>

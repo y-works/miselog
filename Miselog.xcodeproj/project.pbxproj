@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2579681EE2727900DC26D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579671EE2727900DC26D0 /* AppDelegate.swift */; };
+		BE25796D1EE2727900DC26D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE25796B1EE2727900DC26D0 /* Main.storyboard */; };
+		BE2579701EE2727900DC26D0 /* Miselog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE25796E1EE2727900DC26D0 /* Miselog.xcdatamodeld */; };
+		BE2579721EE2727900DC26D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2579711EE2727900DC26D0 /* Assets.xcassets */; };
+		BE2579751EE2727900DC26D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2579731EE2727900DC26D0 /* LaunchScreen.storyboard */; };
+		BE2579801EE2727A00DC26D0 /* MiselogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE25797F1EE2727A00DC26D0 /* MiselogTests.swift */; };
+		BE25798B1EE2727A00DC26D0 /* MiselogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE25798A1EE2727A00DC26D0 /* MiselogUITests.swift */; };
+		BE2579A11EE27A1B00DC26D0 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579A01EE27A1B00DC26D0 /* CustomerListViewController.swift */; };
+		BE2579A31EE299F300DC26D0 /* CustomerFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579A21EE299F300DC26D0 /* CustomerFacade.swift */; };
+		BE2579A51EE29EB800DC26D0 /* AddCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579A41EE29EB800DC26D0 /* AddCustomerViewController.swift */; };
+		BE2579A81EE2A59A00DC26D0 /* CustomerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579A61EE2A59A00DC26D0 /* CustomerListTableViewCell.swift */; };
+		BE2579A91EE2A59A00DC26D0 /* CustomerListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2579A71EE2A59A00DC26D0 /* CustomerListTableViewCell.xib */; };
+		BE2579AB1EE2D87400DC26D0 /* CustomerActivityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579AA1EE2D87400DC26D0 /* CustomerActivityListViewController.swift */; };
+		BE2579AD1EE2E2B200DC26D0 /* CustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579AC1EE2E2B200DC26D0 /* CustomerDetailViewController.swift */; };
+		BE2579B01EE2E76000DC26D0 /* CustomerActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579AE1EE2E76000DC26D0 /* CustomerActivityTableViewCell.swift */; };
+		BE2579B11EE2E76000DC26D0 /* CustomerActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2579AF1EE2E76000DC26D0 /* CustomerActivityTableViewCell.xib */; };
+		BE2579B31EE2E98E00DC26D0 /* CustomerActivityFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579B21EE2E98E00DC26D0 /* CustomerActivityFacade.swift */; };
+		BE2579B51EE2EB1700DC26D0 /* AddCustomerActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579B41EE2EB1700DC26D0 /* AddCustomerActivityViewController.swift */; };
+		BE34F4B61F24345B00132AB2 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34F4B51F24345B00132AB2 /* MainTabbarController.swift */; };
+		BEC702461EED3BC8008ABD75 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702451EED3BC8008ABD75 /* AdSupport.framework */; };
+		BEC702481EED3BD8008ABD75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702471EED3BD8008ABD75 /* AudioToolbox.framework */; };
+		BEC7024A1EED3BEA008ABD75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702491EED3BEA008ABD75 /* AVFoundation.framework */; };
+		BEC7024C1EED3BF9008ABD75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC7024B1EED3BF9008ABD75 /* CoreGraphics.framework */; };
+		BEC7024E1EED3C08008ABD75 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC7024D1EED3C08008ABD75 /* CoreMedia.framework */; };
+		BEC702501EED3C16008ABD75 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC7024F1EED3C16008ABD75 /* CoreTelephony.framework */; };
+		BEC702521EED3C39008ABD75 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702511EED3C39008ABD75 /* EventKit.framework */; };
+		BEC702541EED3C47008ABD75 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702531EED3C47008ABD75 /* EventKitUI.framework */; };
+		BEC702561EED3C59008ABD75 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702551EED3C59008ABD75 /* StoreKit.framework */; };
+		BEC702581EED3C68008ABD75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC702571EED3C68008ABD75 /* SystemConfiguration.framework */; };
+		BEC7025C1EED3DAB008ABD75 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC7025B1EED3DAB008ABD75 /* GoogleMobileAds.framework */; };
+		BEC7025E1EED3F4A008ABD75 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC7025D1EED3F4A008ABD75 /* GoogleMobileAds.framework */; };
+		BEC702611EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC7025F1EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.swift */; };
+		BEC702621EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC702601EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE25797C1EE2727A00DC26D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE25795C1EE2727900DC26D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2579631EE2727900DC26D0;
+			remoteInfo = Miselog;
+		};
+		BE2579871EE2727A00DC26D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE25795C1EE2727900DC26D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE2579631EE2727900DC26D0;
+			remoteInfo = Miselog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2579641EE2727900DC26D0 /* Miselog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miselog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2579671EE2727900DC26D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE25796C1EE2727900DC26D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE25796F1EE2727900DC26D0 /* Miselog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miselog.xcdatamodel; sourceTree = "<group>"; };
+		BE2579711EE2727900DC26D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE2579741EE2727900DC26D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2579761EE2727900DC26D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE25797B1EE2727A00DC26D0 /* MiselogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiselogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE25797F1EE2727A00DC26D0 /* MiselogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiselogTests.swift; sourceTree = "<group>"; };
+		BE2579811EE2727A00DC26D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2579861EE2727A00DC26D0 /* MiselogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiselogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE25798A1EE2727A00DC26D0 /* MiselogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiselogUITests.swift; sourceTree = "<group>"; };
+		BE25798C1EE2727A00DC26D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2579A01EE27A1B00DC26D0 /* CustomerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
+		BE2579A21EE299F300DC26D0 /* CustomerFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerFacade.swift; sourceTree = "<group>"; };
+		BE2579A41EE29EB800DC26D0 /* AddCustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCustomerViewController.swift; sourceTree = "<group>"; };
+		BE2579A61EE2A59A00DC26D0 /* CustomerListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewCell.swift; sourceTree = "<group>"; };
+		BE2579A71EE2A59A00DC26D0 /* CustomerListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerListTableViewCell.xib; sourceTree = "<group>"; };
+		BE2579AA1EE2D87400DC26D0 /* CustomerActivityListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerActivityListViewController.swift; sourceTree = "<group>"; };
+		BE2579AC1EE2E2B200DC26D0 /* CustomerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerDetailViewController.swift; sourceTree = "<group>"; };
+		BE2579AE1EE2E76000DC26D0 /* CustomerActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerActivityTableViewCell.swift; sourceTree = "<group>"; };
+		BE2579AF1EE2E76000DC26D0 /* CustomerActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerActivityTableViewCell.xib; sourceTree = "<group>"; };
+		BE2579B21EE2E98E00DC26D0 /* CustomerActivityFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerActivityFacade.swift; sourceTree = "<group>"; };
+		BE2579B41EE2EB1700DC26D0 /* AddCustomerActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCustomerActivityViewController.swift; sourceTree = "<group>"; };
+		BE34F4B51F24345B00132AB2 /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		BEC702451EED3BC8008ABD75 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BEC702471EED3BD8008ABD75 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BEC702491EED3BEA008ABD75 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BEC7024B1EED3BF9008ABD75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEC7024D1EED3C08008ABD75 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BEC7024F1EED3C16008ABD75 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BEC702511EED3C39008ABD75 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		BEC702531EED3C47008ABD75 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		BEC702551EED3C59008ABD75 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BEC702571EED3C68008ABD75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEC702591EED3D11008ABD75 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../GoogleMobileAds.framework; sourceTree = "<group>"; };
+		BEC7025B1EED3DAB008ABD75 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../Downloads/GoogleMobileAdsSdkiOS-7.20.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		BEC7025D1EED3F4A008ABD75 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		BEC7025F1EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerActivityNoNameTableViewCell.swift; sourceTree = "<group>"; };
+		BEC702601EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerActivityNoNameTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE2579611EE2727900DC26D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC7025C1EED3DAB008ABD75 /* GoogleMobileAds.framework in Frameworks */,
+				BEC702581EED3C68008ABD75 /* SystemConfiguration.framework in Frameworks */,
+				BEC702561EED3C59008ABD75 /* StoreKit.framework in Frameworks */,
+				BEC702541EED3C47008ABD75 /* EventKitUI.framework in Frameworks */,
+				BEC702521EED3C39008ABD75 /* EventKit.framework in Frameworks */,
+				BEC702501EED3C16008ABD75 /* CoreTelephony.framework in Frameworks */,
+				BEC7025E1EED3F4A008ABD75 /* GoogleMobileAds.framework in Frameworks */,
+				BEC7024E1EED3C08008ABD75 /* CoreMedia.framework in Frameworks */,
+				BEC7024C1EED3BF9008ABD75 /* CoreGraphics.framework in Frameworks */,
+				BEC7024A1EED3BEA008ABD75 /* AVFoundation.framework in Frameworks */,
+				BEC702481EED3BD8008ABD75 /* AudioToolbox.framework in Frameworks */,
+				BEC702461EED3BC8008ABD75 /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2579781EE2727A00DC26D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2579831EE2727A00DC26D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE25795B1EE2727900DC26D0 = {
+			isa = PBXGroup;
+			children = (
+				BEC7025D1EED3F4A008ABD75 /* GoogleMobileAds.framework */,
+				BE2579661EE2727900DC26D0 /* Miselog */,
+				BE25797E1EE2727A00DC26D0 /* MiselogTests */,
+				BE2579891EE2727A00DC26D0 /* MiselogUITests */,
+				BE2579651EE2727900DC26D0 /* Products */,
+				BEC702441EED3BC7008ABD75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE2579651EE2727900DC26D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE2579641EE2727900DC26D0 /* Miselog.app */,
+				BE25797B1EE2727A00DC26D0 /* MiselogTests.xctest */,
+				BE2579861EE2727A00DC26D0 /* MiselogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE2579661EE2727900DC26D0 /* Miselog */ = {
+			isa = PBXGroup;
+			children = (
+				BE2579671EE2727900DC26D0 /* AppDelegate.swift */,
+				BE25796B1EE2727900DC26D0 /* Main.storyboard */,
+				BE2579711EE2727900DC26D0 /* Assets.xcassets */,
+				BE2579731EE2727900DC26D0 /* LaunchScreen.storyboard */,
+				BE2579761EE2727900DC26D0 /* Info.plist */,
+				BE25796E1EE2727900DC26D0 /* Miselog.xcdatamodeld */,
+				BE2579A01EE27A1B00DC26D0 /* CustomerListViewController.swift */,
+				BE2579A61EE2A59A00DC26D0 /* CustomerListTableViewCell.swift */,
+				BE2579A71EE2A59A00DC26D0 /* CustomerListTableViewCell.xib */,
+				BE2579A41EE29EB800DC26D0 /* AddCustomerViewController.swift */,
+				BE2579AE1EE2E76000DC26D0 /* CustomerActivityTableViewCell.swift */,
+				BE2579AF1EE2E76000DC26D0 /* CustomerActivityTableViewCell.xib */,
+				BE2579B21EE2E98E00DC26D0 /* CustomerActivityFacade.swift */,
+				BE2579AC1EE2E2B200DC26D0 /* CustomerDetailViewController.swift */,
+				BE2579A21EE299F300DC26D0 /* CustomerFacade.swift */,
+				BE2579AA1EE2D87400DC26D0 /* CustomerActivityListViewController.swift */,
+				BE2579B41EE2EB1700DC26D0 /* AddCustomerActivityViewController.swift */,
+				BEC7025F1EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.swift */,
+				BEC702601EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.xib */,
+				BE34F4B51F24345B00132AB2 /* MainTabbarController.swift */,
+			);
+			path = Miselog;
+			sourceTree = "<group>";
+		};
+		BE25797E1EE2727A00DC26D0 /* MiselogTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE25797F1EE2727A00DC26D0 /* MiselogTests.swift */,
+				BE2579811EE2727A00DC26D0 /* Info.plist */,
+			);
+			path = MiselogTests;
+			sourceTree = "<group>";
+		};
+		BE2579891EE2727A00DC26D0 /* MiselogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE25798A1EE2727A00DC26D0 /* MiselogUITests.swift */,
+				BE25798C1EE2727A00DC26D0 /* Info.plist */,
+			);
+			path = MiselogUITests;
+			sourceTree = "<group>";
+		};
+		BEC702441EED3BC7008ABD75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEC7025B1EED3DAB008ABD75 /* GoogleMobileAds.framework */,
+				BEC702591EED3D11008ABD75 /* GoogleMobileAds.framework */,
+				BEC702571EED3C68008ABD75 /* SystemConfiguration.framework */,
+				BEC702551EED3C59008ABD75 /* StoreKit.framework */,
+				BEC702531EED3C47008ABD75 /* EventKitUI.framework */,
+				BEC702511EED3C39008ABD75 /* EventKit.framework */,
+				BEC7024F1EED3C16008ABD75 /* CoreTelephony.framework */,
+				BEC7024D1EED3C08008ABD75 /* CoreMedia.framework */,
+				BEC7024B1EED3BF9008ABD75 /* CoreGraphics.framework */,
+				BEC702491EED3BEA008ABD75 /* AVFoundation.framework */,
+				BEC702471EED3BD8008ABD75 /* AudioToolbox.framework */,
+				BEC702451EED3BC8008ABD75 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE2579631EE2727900DC26D0 /* Miselog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE25798F1EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "Miselog" */;
+			buildPhases = (
+				BE2579601EE2727900DC26D0 /* Sources */,
+				BE2579611EE2727900DC26D0 /* Frameworks */,
+				BE2579621EE2727900DC26D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Miselog;
+			productName = Miselog;
+			productReference = BE2579641EE2727900DC26D0 /* Miselog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE25797A1EE2727A00DC26D0 /* MiselogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2579921EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "MiselogTests" */;
+			buildPhases = (
+				BE2579771EE2727A00DC26D0 /* Sources */,
+				BE2579781EE2727A00DC26D0 /* Frameworks */,
+				BE2579791EE2727A00DC26D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE25797D1EE2727A00DC26D0 /* PBXTargetDependency */,
+			);
+			name = MiselogTests;
+			productName = MiselogTests;
+			productReference = BE25797B1EE2727A00DC26D0 /* MiselogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE2579851EE2727A00DC26D0 /* MiselogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2579951EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "MiselogUITests" */;
+			buildPhases = (
+				BE2579821EE2727A00DC26D0 /* Sources */,
+				BE2579831EE2727A00DC26D0 /* Frameworks */,
+				BE2579841EE2727A00DC26D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE2579881EE2727A00DC26D0 /* PBXTargetDependency */,
+			);
+			name = MiselogUITests;
+			productName = MiselogUITests;
+			productReference = BE2579861EE2727A00DC26D0 /* MiselogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE25795C1EE2727900DC26D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hiroyuki Narita";
+				TargetAttributes = {
+					BE2579631EE2727900DC26D0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CH9AS7TVGX;
+						ProvisioningStyle = Automatic;
+					};
+					BE25797A1EE2727A00DC26D0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CH9AS7TVGX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE2579631EE2727900DC26D0;
+					};
+					BE2579851EE2727A00DC26D0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CH9AS7TVGX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE2579631EE2727900DC26D0;
+					};
+				};
+			};
+			buildConfigurationList = BE25795F1EE2727900DC26D0 /* Build configuration list for PBXProject "Miselog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE25795B1EE2727900DC26D0;
+			productRefGroup = BE2579651EE2727900DC26D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE2579631EE2727900DC26D0 /* Miselog */,
+				BE25797A1EE2727A00DC26D0 /* MiselogTests */,
+				BE2579851EE2727A00DC26D0 /* MiselogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE2579621EE2727900DC26D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2579751EE2727900DC26D0 /* LaunchScreen.storyboard in Resources */,
+				BE2579B11EE2E76000DC26D0 /* CustomerActivityTableViewCell.xib in Resources */,
+				BE2579721EE2727900DC26D0 /* Assets.xcassets in Resources */,
+				BE25796D1EE2727900DC26D0 /* Main.storyboard in Resources */,
+				BEC702621EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.xib in Resources */,
+				BE2579A91EE2A59A00DC26D0 /* CustomerListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2579791EE2727A00DC26D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2579841EE2727A00DC26D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE2579601EE2727900DC26D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC702611EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.swift in Sources */,
+				BE2579A31EE299F300DC26D0 /* CustomerFacade.swift in Sources */,
+				BE2579681EE2727900DC26D0 /* AppDelegate.swift in Sources */,
+				BE2579701EE2727900DC26D0 /* Miselog.xcdatamodeld in Sources */,
+				BE2579A81EE2A59A00DC26D0 /* CustomerListTableViewCell.swift in Sources */,
+				BE2579B51EE2EB1700DC26D0 /* AddCustomerActivityViewController.swift in Sources */,
+				BE34F4B61F24345B00132AB2 /* MainTabbarController.swift in Sources */,
+				BE2579AB1EE2D87400DC26D0 /* CustomerActivityListViewController.swift in Sources */,
+				BE2579AD1EE2E2B200DC26D0 /* CustomerDetailViewController.swift in Sources */,
+				BE2579B31EE2E98E00DC26D0 /* CustomerActivityFacade.swift in Sources */,
+				BE2579A51EE29EB800DC26D0 /* AddCustomerViewController.swift in Sources */,
+				BE2579B01EE2E76000DC26D0 /* CustomerActivityTableViewCell.swift in Sources */,
+				BE2579A11EE27A1B00DC26D0 /* CustomerListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2579771EE2727A00DC26D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2579801EE2727A00DC26D0 /* MiselogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2579821EE2727A00DC26D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE25798B1EE2727A00DC26D0 /* MiselogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE25797D1EE2727A00DC26D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2579631EE2727900DC26D0 /* Miselog */;
+			targetProxy = BE25797C1EE2727A00DC26D0 /* PBXContainerItemProxy */;
+		};
+		BE2579881EE2727A00DC26D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE2579631EE2727900DC26D0 /* Miselog */;
+			targetProxy = BE2579871EE2727A00DC26D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE25796B1EE2727900DC26D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE25796C1EE2727900DC26D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE2579731EE2727900DC26D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE2579741EE2727900DC26D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE25798D1EE2727A00DC26D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE25798E1EE2727A00DC26D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE2579901EE2727A00DC26D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CH9AS7TVGX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Miselog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoctoworks.Miselog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE2579911EE2727A00DC26D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CH9AS7TVGX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Miselog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoctoworks.Miselog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BE2579931EE2727A00DC26D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CH9AS7TVGX;
+				INFOPLIST_FILE = MiselogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoctoworks.MiselogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miselog.app/Miselog";
+			};
+			name = Debug;
+		};
+		BE2579941EE2727A00DC26D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CH9AS7TVGX;
+				INFOPLIST_FILE = MiselogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoctoworks.MiselogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miselog.app/Miselog";
+			};
+			name = Release;
+		};
+		BE2579961EE2727A00DC26D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CH9AS7TVGX;
+				INFOPLIST_FILE = MiselogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoctoworks.MiselogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Miselog;
+			};
+			name = Debug;
+		};
+		BE2579971EE2727A00DC26D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = CH9AS7TVGX;
+				INFOPLIST_FILE = MiselogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yoctoworks.MiselogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Miselog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE25795F1EE2727900DC26D0 /* Build configuration list for PBXProject "Miselog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE25798D1EE2727A00DC26D0 /* Debug */,
+				BE25798E1EE2727A00DC26D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE25798F1EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "Miselog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2579901EE2727A00DC26D0 /* Debug */,
+				BE2579911EE2727A00DC26D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2579921EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "MiselogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2579931EE2727A00DC26D0 /* Debug */,
+				BE2579941EE2727A00DC26D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2579951EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "MiselogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2579961EE2727A00DC26D0 /* Debug */,
+				BE2579971EE2727A00DC26D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE25796E1EE2727900DC26D0 /* Miselog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE25796F1EE2727900DC26D0 /* Miselog.xcdatamodel */,
+			);
+			currentVersion = BE25796F1EE2727900DC26D0 /* Miselog.xcdatamodel */;
+			path = Miselog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE25795C1EE2727900DC26D0 /* Project object */;
+}
