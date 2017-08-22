@@ -43,7 +43,7 @@ class CustomerDetailViewController: UIViewController,
         
         
         /* Admob初期化 */
-        self.viewAdmob.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        self.viewAdmob.adUnitID = Admob.MAIN_BANNER_ID
         self.viewAdmob.rootViewController = self
         self.viewAdmob.load(GADRequest())
     }

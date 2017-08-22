@@ -36,7 +36,7 @@ class CustomerListViewController: UIViewController,
         
         self.updateTableView()
         
-        self.admobBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        self.admobBannerView.adUnitID = Admob.MAIN_BANNER_ID
         self.admobBannerView.rootViewController = self
         self.admobBannerView.load(GADRequest())
         
