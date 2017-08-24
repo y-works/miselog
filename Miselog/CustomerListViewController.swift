@@ -39,6 +39,7 @@ class CustomerListViewController: UIViewController,
         self.admobBannerView.adUnitID = Admob.MAIN_BANNER_ID
         self.admobBannerView.rootViewController = self
         self.admobBannerView.load(GADRequest())
+        //self.tabBarItem.image = UIImage(named: "TabIconList")
         
     }
     

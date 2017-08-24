@@ -13,6 +13,12 @@ class MainTabberController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         self.delegate = self
+        
+        
+        self.tabBar.items![0].image = UIImage(named: "TabIconHistory")
+        self.tabBar.items![0].image = UIImage(named: "TabIconHistorySelected")
+        self.tabBar.items![1].image = UIImage(named: "TabIconList")
+        self.tabBar.items![1].image = UIImage(named: "TabIconListSelected")
     }
     
     func tabBarController(_ tabBarController: UITabBarController,

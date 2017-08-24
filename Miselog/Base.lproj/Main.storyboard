@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ei-eR-LU6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ei-eR-LU6">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--お客様-->
         <scene sceneID="lKB-FL-XV4">
             <objects>
                 <viewController storyboardIdentifier="CostomerListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FXN-bf-E6m" customClass="CustomerListViewController" customModule="Miselog" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <constraint firstItem="EFq-nj-Sgg" firstAttribute="leading" secondItem="Vkp-lJ-J31" secondAttribute="leading" id="w7C-ky-ht0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ZND-so-cJB"/>
+                    <tabBarItem key="tabBarItem" title="お客様" id="ZND-so-cJB"/>
                     <connections>
                         <outlet property="admobBannerView" destination="Vkp-lJ-J31" id="0cI-6t-LF6"/>
                         <outlet property="tableView" destination="H2e-Ez-CG7" id="htR-ae-2k4"/>
@@ -276,7 +276,7 @@
             </objects>
             <point key="canvasLocation" x="3372.4637681159425" y="230.70652173913047"/>
         </scene>
-        <!--Item-->
+        <!--履歴-->
         <scene sceneID="CQT-Ej-AgP">
             <objects>
                 <viewController id="F3c-VJ-UOX" customClass="CustomerActivityListViewController" customModule="Miselog" customModuleProvider="target" sceneMemberID="viewController">
@@ -326,7 +326,7 @@
                             <constraint firstItem="pYW-Q0-BQU" firstAttribute="leading" secondItem="QwE-DH-fIu" secondAttribute="leading" id="vg3-1w-sys"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AS7-UG-GJb"/>
+                    <tabBarItem key="tabBarItem" title="履歴" id="AS7-UG-GJb"/>
                     <connections>
                         <outlet property="tableView" destination="SYq-jX-mnb" id="knB-uH-LZt"/>
                         <outlet property="viewAdmob" destination="pYW-Q0-BQU" id="K5D-6a-ZcS"/>
