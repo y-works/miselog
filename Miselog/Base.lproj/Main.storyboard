@@ -427,15 +427,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支払い金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ph-V8-Pg4">
+                                <rect key="frame" x="20" y="518" width="86.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jke-6j-QGM">
+                                <rect key="frame" x="20" y="549" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="z5G-79-73R" firstAttribute="leading" secondItem="0mu-nu-eEQ" secondAttribute="leadingMargin" id="0cO-YN-kZv"/>
                             <constraint firstItem="2rF-i0-m72" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="2UC-wY-R1b"/>
+                            <constraint firstItem="5ph-V8-Pg4" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="2VD-9Z-mqj"/>
                             <constraint firstItem="GMX-01-Yvm" firstAttribute="top" secondItem="6HQ-aB-xa6" secondAttribute="bottom" constant="8" symbolic="YES" id="G5g-YN-1Yv"/>
                             <constraint firstItem="AWD-X8-MCc" firstAttribute="trailing" secondItem="X8d-oy-UX6" secondAttribute="trailing" id="GlA-ZH-HVg"/>
                             <constraint firstItem="8pm-ma-U9S" firstAttribute="top" secondItem="7Vz-VI-ejm" secondAttribute="bottom" constant="10" id="HpW-Vj-D3t"/>
                             <constraint firstItem="X8d-oy-UX6" firstAttribute="baseline" secondItem="z5G-79-73R" secondAttribute="baseline" id="MLa-kc-yYl"/>
+                            <constraint firstItem="jke-6j-QGM" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="NSF-mQ-nsa"/>
                             <constraint firstItem="N5g-RF-InQ" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="PGP-4Y-Uhj"/>
                             <constraint firstItem="7Vz-VI-ejm" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="PSP-mN-Y3q"/>
                             <constraint firstItem="AWD-X8-MCc" firstAttribute="top" secondItem="2rF-i0-m72" secondAttribute="bottom" constant="10" id="PV9-4R-qRu"/>
@@ -453,10 +467,13 @@
                             <constraint firstItem="qQE-IT-PkE" firstAttribute="trailing" secondItem="GMX-01-Yvm" secondAttribute="trailing" id="kdF-ov-Psd"/>
                             <constraint firstItem="N5g-RF-InQ" firstAttribute="top" secondItem="fdC-1j-qcK" secondAttribute="bottom" constant="10" id="lF8-yi-8Yh"/>
                             <constraint firstItem="8pm-ma-U9S" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="mlg-eL-3Nw"/>
+                            <constraint firstItem="jke-6j-QGM" firstAttribute="trailing" secondItem="X8d-oy-UX6" secondAttribute="trailing" id="nwX-O8-xyj"/>
                             <constraint firstItem="fdC-1j-qcK" firstAttribute="top" secondItem="AWD-X8-MCc" secondAttribute="bottom" constant="30" id="ts2-48-Vak"/>
                             <constraint firstAttribute="trailingMargin" secondItem="203-e4-k9A" secondAttribute="trailing" id="vNA-aO-rS2"/>
+                            <constraint firstItem="5ph-V8-Pg4" firstAttribute="top" secondItem="N5g-RF-InQ" secondAttribute="bottom" constant="30" id="vY5-oo-K4Q"/>
                             <constraint firstItem="qQE-IT-PkE" firstAttribute="top" secondItem="GMX-01-Yvm" secondAttribute="bottom" id="w7U-nM-Aks"/>
                             <constraint firstItem="2rF-i0-m72" firstAttribute="top" secondItem="8pm-ma-U9S" secondAttribute="bottom" constant="30" id="wnr-t0-qdL"/>
+                            <constraint firstItem="jke-6j-QGM" firstAttribute="top" secondItem="5ph-V8-Pg4" secondAttribute="bottom" constant="10" id="x9M-E4-kSM"/>
                             <constraint firstItem="fdC-1j-qcK" firstAttribute="leading" secondItem="z5G-79-73R" secondAttribute="leading" id="z98-Q0-rhD"/>
                         </constraints>
                     </view>
@@ -464,6 +481,7 @@
                         <outlet property="labelCustomerName" destination="203-e4-k9A" id="ZyJ-OV-tLp"/>
                         <outlet property="testFieldMemo" destination="N5g-RF-InQ" id="bQJ-ei-aYP"/>
                         <outlet property="textFieldDate" destination="8pm-ma-U9S" id="CxX-yO-vdQ"/>
+                        <outlet property="textFieldPaymentAmount" destination="jke-6j-QGM" id="z7B-au-lNA"/>
                         <outlet property="textFieldTime" destination="AWD-X8-MCc" id="iiM-DY-GPv"/>
                         <outlet property="viewAdmob" destination="GMX-01-Yvm" id="WuZ-hL-74q"/>
                     </connections>
@@ -471,6 +489,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HqL-k6-oh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2624.6376811594205" y="981.52173913043487"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fC6-R0-ZGV">
+            <objects>
+                <viewController id="Hl6-ef-kbq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qa2-bu-Emy"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbt-an-WWC"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="hj5-Hz-aXp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="utz-B6-D5m" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="28" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="43s-Za-QPD"/>
+                                    <constraint firstAttribute="height" constant="50" id="elo-ly-zvs"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBm-cq-MV5">
+                                <rect key="frame" x="0.0" y="78" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="お客様履歴を追加" id="Vf8-N3-EmH">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7yE-l8-ik2">
+                                            <connections>
+                                                <action selector="buttonCancelTapped:" destination="nVJ-O1-yM8" id="hQt-ld-mmc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="biH-5E-kyu">
+                                            <connections>
+                                                <action selector="buttonSaveTapped:" destination="nVJ-O1-yM8" id="2H9-8J-WHe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vBm-cq-MV5" firstAttribute="leading" secondItem="utz-B6-D5m" secondAttribute="leading" id="6nq-iZ-tc6"/>
+                            <constraint firstItem="vBm-cq-MV5" firstAttribute="top" secondItem="utz-B6-D5m" secondAttribute="bottom" id="BYU-kF-iB7"/>
+                            <constraint firstAttribute="trailing" secondItem="utz-B6-D5m" secondAttribute="trailing" id="KCq-3V-Bz1"/>
+                            <constraint firstItem="utz-B6-D5m" firstAttribute="leading" secondItem="hj5-Hz-aXp" secondAttribute="leading" id="W9m-eo-LWf"/>
+                            <constraint firstItem="utz-B6-D5m" firstAttribute="top" secondItem="qa2-bu-Emy" secondAttribute="bottom" constant="8" symbolic="YES" id="YMY-ko-wEI"/>
+                            <constraint firstItem="vBm-cq-MV5" firstAttribute="trailing" secondItem="utz-B6-D5m" secondAttribute="trailing" id="duu-O9-7zE"/>
+                        </constraints>
+                    </scrollView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljg-wX-tCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3328.985507246377" y="981.52173913043487"/>
         </scene>
         <!--Main Tabber Controller-->
         <scene sceneID="Xmw-qA-cAA">

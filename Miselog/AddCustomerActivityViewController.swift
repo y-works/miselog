@@ -28,11 +28,13 @@ class AddCustomerActivityViewController:
     let datePicker = UIDatePicker()
     let timePicker = UIDatePicker()
     var mode = AddCustomerActivityMode.Create
+    var paymentAmount:Int32 = 0
     
     @IBOutlet weak var testFieldMemo: UITextField!
     @IBOutlet weak var textFieldDate: UITextField!
     @IBOutlet weak var textFieldTime: UITextField!
     @IBOutlet weak var labelCustomerName: UILabel!
+    @IBOutlet weak var textFieldPaymentAmount: UITextField!
     @IBOutlet weak var viewAdmob: GADBannerView!
     
     override func viewDidLoad() {
@@ -113,6 +115,35 @@ class AddCustomerActivityViewController:
         self.textFieldTime.inputView = self.timePicker
         self.textFieldTime.inputAccessoryView = timePickerToolBar
         
+        // NumPad
+        let numPadToolBar = UIToolbar()
+        let doneButtonNum = UIBarButtonItem(
+            title: "Done",
+            style: .plain,
+            target: self,
+            action: #selector(AddCustomerActivityViewController.doneNumPad))
+        let cancelButtonNum = UIBarButtonItem(
+            title: "Cancel",
+            style: .plain,
+            target: self,
+            action: #selector(AddCustomerActivityViewController.doneNumPad))
+        numPadToolBar.barStyle = .default
+        numPadToolBar.isTranslucent = true
+        numPadToolBar.tintColor = UIColor(
+            red: 76/255,
+            green: 217/255,
+            blue: 100/255,
+            alpha: 1)
+        numPadToolBar.sizeToFit()
+        numPadToolBar.setItems(
+            [cancelButtonNum, spaceButton, doneButtonNum],
+            animated: false)
+        numPadToolBar.isUserInteractionEnabled = true
+        
+        self.textFieldPaymentAmount.keyboardType = UIKeyboardType.numberPad
+        self.textFieldPaymentAmount.inputAccessoryView = numPadToolBar;
+        self.textFieldPaymentAmount.text = "0"
+        
         // Admob
         self.viewAdmob.adUnitID = Admob.MAIN_BANNER_ID
         self.viewAdmob.rootViewController = self
@@ -183,6 +214,21 @@ class AddCustomerActivityViewController:
         self.textFieldTime.resignFirstResponder()
     }
     
+    func doneNumPad() {
+        if(self.textFieldPaymentAmount.text != "") {
+            self.paymentAmount = Int32(self.textFieldPaymentAmount.text!)!
+        } else {
+            self.paymentAmount = 0;
+        }
+        
+        //self.textFieldPaymentAmount.text = String(self.paymentAmount)
+        self.textFieldPaymentAmount.resignFirstResponder()
+    }
+    
+    func cancelNumPad() {
+        self.textFieldPaymentAmount.resignFirstResponder()
+    }
+    
     /// カスタマ選択
     func selectCustomer() {
         let nextViewController
@@ -213,7 +259,8 @@ class AddCustomerActivityViewController:
         if self.customer != nil {
             succeeded = self.facade.create(customer: self.customer!,
                                                memo: self.testFieldMemo.text!,
-                                               date: self.date)
+                                               date: self.date,
+                                      paymentAmount: self.paymentAmount)
             
             if !succeeded {
                 print("error")

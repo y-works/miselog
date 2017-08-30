@@ -14,8 +14,10 @@ class CustomerActivityFacade {
     let attrCustomer = "customer"
     let attrMemo = "memo"
     let attrDate = "date"
+    let attrPaymentAmount = "paymentAmount"
     
-    func create(customer: Customer, memo: String, date: Date) -> Bool {
+    func create(customer: Customer, memo: String, date: Date,
+                paymentAmount: Int32) -> Bool {
         let appDel = UIApplication.shared.delegate as! AppDelegate
         let context = appDel.persistentContainer.viewContext
         
@@ -28,6 +30,7 @@ class CustomerActivityFacade {
         newRecord.setValue(customer, forKey: self.attrCustomer)
         newRecord.setValue(memo, forKey: self.attrMemo)
         newRecord.setValue(date, forKey: self.attrDate)
+        newRecord.setValue(paymentAmount, forKey: self.attrPaymentAmount)
         
         do {
             try context.save()

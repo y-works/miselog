@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -45,8 +45,17 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJI-zN-dSo">
-                        <rect key="frame" x="15" y="36.5" width="302" height="68"/>
+                        <rect key="frame" x="15" y="37" width="182" height="68"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-Rs-iTL">
+                        <rect key="frame" x="207" y="37" width="110" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="qE1-l3-QMZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -57,19 +66,24 @@
                     <constraint firstItem="FwF-fA-loL" firstAttribute="top" secondItem="C72-yX-g9r" secondAttribute="top" constant="5" id="6qc-FR-baA"/>
                     <constraint firstItem="gw8-eJ-LWv" firstAttribute="baseline" secondItem="FwF-fA-loL" secondAttribute="baseline" id="76X-34-FIF"/>
                     <constraint firstItem="FwF-fA-loL" firstAttribute="leading" secondItem="C72-yX-g9r" secondAttribute="trailing" constant="10" id="Mrx-jY-rtc"/>
-                    <constraint firstItem="gw8-eJ-LWv" firstAttribute="trailing" secondItem="xJI-zN-dSo" secondAttribute="trailing" id="OjT-Aq-J9v"/>
+                    <constraint firstItem="3qh-Rs-iTL" firstAttribute="leading" secondItem="xJI-zN-dSo" secondAttribute="trailing" constant="10" id="Qax-g4-d3r"/>
+                    <constraint firstItem="3qh-Rs-iTL" firstAttribute="bottom" secondItem="xJI-zN-dSo" secondAttribute="bottom" id="TUu-nD-fOv"/>
                     <constraint firstItem="xJI-zN-dSo" firstAttribute="top" secondItem="FwF-fA-loL" secondAttribute="bottom" constant="5" id="TyG-5O-hzx"/>
                     <constraint firstItem="C72-yX-g9r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Upd-d0-Pei"/>
                     <constraint firstItem="xJI-zN-dSo" firstAttribute="leading" secondItem="FwF-fA-loL" secondAttribute="leading" id="aFW-0D-KEh"/>
+                    <constraint firstItem="xJI-zN-dSo" firstAttribute="leading" secondItem="C72-yX-g9r" secondAttribute="trailing" constant="20" id="gla-eX-P9u"/>
+                    <constraint firstItem="gw8-eJ-LWv" firstAttribute="trailing" secondItem="3qh-Rs-iTL" secondAttribute="trailing" id="ihJ-yg-A7p"/>
                     <constraint firstAttribute="bottom" secondItem="C72-yX-g9r" secondAttribute="bottom" constant="5" id="lH6-Yy-mdl"/>
                     <constraint firstItem="gw8-eJ-LWv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="llo-Jn-2Nh"/>
                     <constraint firstItem="xJI-zN-dSo" firstAttribute="bottom" secondItem="C72-yX-g9r" secondAttribute="bottom" id="nSq-oN-Vea"/>
+                    <constraint firstItem="3qh-Rs-iTL" firstAttribute="top" secondItem="xJI-zN-dSo" secondAttribute="top" id="tIM-Ma-W6Q"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="labelActivityMemo" destination="xJI-zN-dSo" id="dFw-6b-Eqk"/>
                 <outlet property="labelDate" destination="gw8-eJ-LWv" id="J3h-fN-9B2"/>
                 <outlet property="labelName" destination="FwF-fA-loL" id="pga-MK-pP3"/>
+                <outlet property="labelPaymentAmount" destination="3qh-Rs-iTL" id="V8V-yj-47a"/>
             </connections>
             <point key="canvasLocation" x="34" y="87"/>
         </tableViewCell>

@@ -86,6 +86,8 @@ class CustomerActivityListViewController: UIViewController,
         cell.labelName.text = activity.customer?.name
         cell.labelActivityMemo.text = activity.memo
         cell.labelDate.text = formatter.string(from: activity.date! as Date)
+        cell.labelPaymentAmount.text = String(activity.paymentAmount) + "円"
+        
         cell.layoutIfNeeded()
         
         return cell

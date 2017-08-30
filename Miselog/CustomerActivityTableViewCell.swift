@@ -10,9 +10,11 @@ import UIKit
 
 class CustomerActivityTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelPaymentAmount: UILabel!
     @IBOutlet weak var labelActivityMemo: UILabel!
     @IBOutlet weak var labelDate: UILabel!
     @IBOutlet weak var labelName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
