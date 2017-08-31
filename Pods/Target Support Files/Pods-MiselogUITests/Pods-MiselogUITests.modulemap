@@ -1,0 +1,6 @@
+framework module Pods_MiselogUITests {
+  umbrella header "Pods-MiselogUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

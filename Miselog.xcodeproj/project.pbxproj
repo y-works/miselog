@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D9D385AB0D4483269F57E5 /* Pods_MiselogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B19B3ED109E9E2243A7D30 /* Pods_MiselogTests.framework */; };
+		40BB59A908CE166678A29D16 /* Pods_MiselogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67CC36A26F75239E678375D /* Pods_MiselogUITests.framework */; };
+		735B9A57673D2699482AC30E /* Pods_Miselog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6629EECF09DA5ADFA2989F96 /* Pods_Miselog.framework */; };
 		BE2579681EE2727900DC26D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2579671EE2727900DC26D0 /* AppDelegate.swift */; };
 		BE25796D1EE2727900DC26D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE25796B1EE2727900DC26D0 /* Main.storyboard */; };
 		BE2579701EE2727900DC26D0 /* Miselog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE25796E1EE2727900DC26D0 /* Miselog.xcdatamodeld */; };
@@ -61,6 +64,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		285036895E3B718ED4868CF6 /* Pods-MiselogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiselogUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiselogUITests/Pods-MiselogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5915B93FAF51142BAF723B56 /* Pods-MiselogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiselogUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiselogUITests/Pods-MiselogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59B19B3ED109E9E2243A7D30 /* Pods_MiselogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiselogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6629EECF09DA5ADFA2989F96 /* Pods_Miselog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miselog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8394527D6EEA6AA1C799E8E4 /* Pods-Miselog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miselog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miselog/Pods-Miselog.release.xcconfig"; sourceTree = "<group>"; };
+		A67CC36A26F75239E678375D /* Pods_MiselogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiselogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2579641EE2727900DC26D0 /* Miselog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miselog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2579671EE2727900DC26D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE25796C1EE2727900DC26D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +111,9 @@
 		BEC7025D1EED3F4A008ABD75 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		BEC7025F1EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerActivityNoNameTableViewCell.swift; sourceTree = "<group>"; };
 		BEC702601EF80C53008ABD75 /* CustomerActivityNoNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerActivityNoNameTableViewCell.xib; sourceTree = "<group>"; };
+		C81D39D3E9BAD59E70497F36 /* Pods-MiselogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiselogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiselogTests/Pods-MiselogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B5365BDB4149AAA0CFE693 /* Pods-MiselogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiselogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiselogTests/Pods-MiselogTests.release.xcconfig"; sourceTree = "<group>"; };
+		E93213C0A77B11E5417D3C28 /* Pods-Miselog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miselog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miselog/Pods-Miselog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,7 @@
 				BEC7024A1EED3BEA008ABD75 /* AVFoundation.framework in Frameworks */,
 				BEC702481EED3BD8008ABD75 /* AudioToolbox.framework in Frameworks */,
 				BEC702461EED3BC8008ABD75 /* AdSupport.framework in Frameworks */,
+				735B9A57673D2699482AC30E /* Pods_Miselog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D9D385AB0D4483269F57E5 /* Pods_MiselogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,12 +149,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BB59A908CE166678A29D16 /* Pods_MiselogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105EADB3695B65F6D26FF55D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E93213C0A77B11E5417D3C28 /* Pods-Miselog.debug.xcconfig */,
+				8394527D6EEA6AA1C799E8E4 /* Pods-Miselog.release.xcconfig */,
+				C81D39D3E9BAD59E70497F36 /* Pods-MiselogTests.debug.xcconfig */,
+				D4B5365BDB4149AAA0CFE693 /* Pods-MiselogTests.release.xcconfig */,
+				285036895E3B718ED4868CF6 /* Pods-MiselogUITests.debug.xcconfig */,
+				5915B93FAF51142BAF723B56 /* Pods-MiselogUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BE25795B1EE2727900DC26D0 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +178,7 @@
 				BE2579891EE2727A00DC26D0 /* MiselogUITests */,
 				BE2579651EE2727900DC26D0 /* Products */,
 				BEC702441EED3BC7008ABD75 /* Frameworks */,
+				105EADB3695B65F6D26FF55D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,6 +253,9 @@
 				BEC702491EED3BEA008ABD75 /* AVFoundation.framework */,
 				BEC702471EED3BD8008ABD75 /* AudioToolbox.framework */,
 				BEC702451EED3BC8008ABD75 /* AdSupport.framework */,
+				6629EECF09DA5ADFA2989F96 /* Pods_Miselog.framework */,
+				59B19B3ED109E9E2243A7D30 /* Pods_MiselogTests.framework */,
+				A67CC36A26F75239E678375D /* Pods_MiselogUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE25798F1EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "Miselog" */;
 			buildPhases = (
+				666F332108E1E5A33F2DE215 /* [CP] Check Pods Manifest.lock */,
 				BE2579601EE2727900DC26D0 /* Sources */,
 				BE2579611EE2727900DC26D0 /* Frameworks */,
 				BE2579621EE2727900DC26D0 /* Resources */,
+				B3839FBB4C8B65CD8EDD77C2 /* [CP] Embed Pods Frameworks */,
+				15534A54013735B127838AE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE2579921EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "MiselogTests" */;
 			buildPhases = (
+				2F234A838479AB70B69C2616 /* [CP] Check Pods Manifest.lock */,
 				BE2579771EE2727A00DC26D0 /* Sources */,
 				BE2579781EE2727A00DC26D0 /* Frameworks */,
 				BE2579791EE2727A00DC26D0 /* Resources */,
+				62C8BAA53E35D1994F6C55D6 /* [CP] Embed Pods Frameworks */,
+				5EE1C18CEF1D9222B3B8C681 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE2579951EE2727A00DC26D0 /* Build configuration list for PBXNativeTarget "MiselogUITests" */;
 			buildPhases = (
+				93657EBD44604AC1EE177135 /* [CP] Check Pods Manifest.lock */,
 				BE2579821EE2727A00DC26D0 /* Sources */,
 				BE2579831EE2727A00DC26D0 /* Frameworks */,
 				BE2579841EE2727A00DC26D0 /* Resources */,
+				36BEAE83DCAD75E026EDF66B /* [CP] Embed Pods Frameworks */,
+				161B136701C16848844C437C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,6 +403,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15534A54013735B127838AE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miselog/Pods-Miselog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		161B136701C16848844C437C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiselogUITests/Pods-MiselogUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F234A838479AB70B69C2616 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiselogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36BEAE83DCAD75E026EDF66B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiselogUITests/Pods-MiselogUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE1C18CEF1D9222B3B8C681 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiselogTests/Pods-MiselogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C8BAA53E35D1994F6C55D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiselogTests/Pods-MiselogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		666F332108E1E5A33F2DE215 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Miselog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93657EBD44604AC1EE177135 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiselogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3839FBB4C8B65CD8EDD77C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Miselog/Pods-Miselog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miselog/Pods-Miselog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE2579601EE2727900DC26D0 /* Sources */ = {
@@ -533,6 +724,7 @@
 		};
 		BE2579901EE2727A00DC26D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93213C0A77B11E5417D3C28 /* Pods-Miselog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65TAZ24A26;
@@ -550,6 +742,7 @@
 		};
 		BE2579911EE2727A00DC26D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8394527D6EEA6AA1C799E8E4 /* Pods-Miselog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 65TAZ24A26;
@@ -567,6 +760,7 @@
 		};
 		BE2579931EE2727A00DC26D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81D39D3E9BAD59E70497F36 /* Pods-MiselogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +776,7 @@
 		};
 		BE2579941EE2727A00DC26D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B5365BDB4149AAA0CFE693 /* Pods-MiselogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -597,6 +792,7 @@
 		};
 		BE2579961EE2727A00DC26D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285036895E3B718ED4868CF6 /* Pods-MiselogUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CH9AS7TVGX;
@@ -611,6 +807,7 @@
 		};
 		BE2579971EE2727A00DC26D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5915B93FAF51142BAF723B56 /* Pods-MiselogUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = CH9AS7TVGX;
